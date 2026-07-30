@@ -172,6 +172,7 @@
                         <li>Toma pedidos y los deriva ordenados a tu equipo</li>
                         <li>Avisa novedades y promociones a tus clientes</li>
                     </ul>
+                    <button class="btn btn-ghost btn-small demo-trigger" type="button" data-demo="comercios">Ver demo</button>
                 </article>
 
                 <article class="use-case">
@@ -182,6 +183,7 @@
                         <li>Envía recordatorios para bajar el ausentismo</li>
                         <li>Responde preguntas frecuentes sobre la consulta</li>
                     </ul>
+                    <button class="btn btn-ghost btn-small demo-trigger" type="button" data-demo="consultorios">Ver demo</button>
                 </article>
 
                 <article class="use-case">
@@ -192,6 +194,7 @@
                         <li>Acompaña el proceso de alta de nuevos socios</li>
                         <li>Recuerda vencimientos y renovaciones a tiempo</li>
                     </ul>
+                    <button class="btn btn-ghost btn-small demo-trigger" type="button" data-demo="gimnasios">Ver demo</button>
                 </article>
             </div>
 
@@ -253,6 +256,28 @@
         <a class="back-top smoothscroll" href="#top">Volver arriba ↑</a>
     </div>
 </footer>
+
+<!-- DEMO MODAL -->
+<div class="demo-modal" id="demoModal" aria-hidden="true">
+    <div class="demo-modal__backdrop" data-demo-close></div>
+    <div class="demo-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+        <button class="demo-modal__close" type="button" data-demo-close aria-label="Cerrar demo">✕</button>
+
+        <div class="demo-phone">
+            <div class="demo-phone__header">
+                <div class="demo-phone__avatar" id="demoAvatar">🛒</div>
+                <div class="demo-phone__who">
+                    <p class="demo-phone__name" id="demoModalTitle">Negocio</p>
+                    <p class="demo-phone__status" id="demoStatus">en línea</p>
+                </div>
+            </div>
+            <div class="demo-phone__chat" id="demoChat"></div>
+            <div class="demo-phone__footer">
+                <button class="btn btn-primary btn-small" type="button" id="demoReplay">Reiniciar demo</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
