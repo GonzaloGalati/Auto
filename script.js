@@ -15,3 +15,11 @@ if (navToggle) {
         });
     });
 }
+
+// back to top (header is sticky, so #top anchor alone won't scroll)
+document.querySelectorAll('.back-top').forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
