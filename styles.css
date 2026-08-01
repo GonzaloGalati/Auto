@@ -326,6 +326,98 @@ a { color: inherit; text-decoration: none; }
     width: 100%;
 }
 
+/* portfolio / trabajos */
+.portfolio-item {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.portfolio-item .use-case-tag,
+.portfolio-item h3,
+.portfolio-item p {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.portfolio-item .use-case-tag { margin-top: 20px; }
+.portfolio-item p { margin-bottom: 24px; }
+
+.portfolio-mock {
+    background: #0c0e14;
+    border-bottom: 1px solid var(--surface-border);
+}
+
+.mock-topbar {
+    display: flex;
+    gap: 5px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--surface-border);
+}
+
+.mock-topbar span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff1a;
+}
+
+.mock-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 108px;
+}
+
+/* bot mockup: chat bubbles */
+.mock-bubble {
+    height: 16px;
+    border-radius: 8px;
+    width: 65%;
+    background: #ffffff12;
+}
+
+.mock-bubble--right {
+    align-self: flex-end;
+    background: #7c5cff3d;
+    width: 45%;
+}
+
+.mock-bubble.short { width: 40%; }
+
+/* web mockup: hero + blocks */
+.mock-hero {
+    height: 34px;
+    border-radius: 6px;
+    background: var(--accent-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+
+.mock-row {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+
+.mock-block {
+    flex: 1;
+    border-radius: 6px;
+    background: #ffffff12;
+}
+
+/* app mockup: list rows */
+.mock-list-row {
+    height: 18px;
+    border-radius: 6px;
+    background: #ffffff12;
+}
+
+.mock-list-row.short { width: 60%; }
+
 /* demo modal */
 .demo-modal {
     position: fixed;
