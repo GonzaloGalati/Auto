@@ -675,6 +675,8 @@ a { color: inherit; text-decoration: none; }
     .site-header.nav-open .nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         position: absolute;
         top: 100%;
         left: 0;
@@ -683,10 +685,6 @@ a { color: inherit; text-decoration: none; }
         border-bottom: 1px solid var(--surface-border);
         padding: 20px 24px 28px;
         gap: 18px;
-    }
-
-    .site-header.nav-open .header-inner .btn-small {
-        display: inline-flex;
     }
 }
 
